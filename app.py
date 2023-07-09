@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import os
 import joblib
-import pickle
 from streamlit_option_menu import option_menu
 from streamlit_extras.switch_page_button import switch_page
 
