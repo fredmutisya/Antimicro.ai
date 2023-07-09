@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+joblib
+pickle
+streamlit_option_menu
+streamlit_extras
+streamlit_lottie
+pandas_profiling
+streamlit_pandas_profiling
+pycaret
+xgboost
