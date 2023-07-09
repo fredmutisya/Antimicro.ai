@@ -24,16 +24,20 @@ from pycaret.classification import setup, compare_models, pull , save_model
 st.set_page_config(layout="wide")
 
 
-#Load saved XGBoost model for bacteria with no genes
-xgb_model_no_genes = pickle.load(open(".\xgb_model_no_genes.pkl", 'rb'))
+# Load saved XGBoost model for bacteria with no genes
+url_no_genes = "https://raw.githubusercontent.com/fredmutisya/Antimicro.ai/main/xgb_model_no_genes.pkl"
+response_no_genes = requests.get(url_no_genes)
+xgb_model_no_genes = pickle.loads(response_no_genes.content)
 
-#Load saved XGBoost model for bacteria with genes
-xgb_model_genes = pickle.load(open(".\xgb_model_genes.pkl", 'rb'))
+# Load saved XGBoost model for bacteria with genes
+url_genes = "https://raw.githubusercontent.com/fredmutisya/Antimicro.ai/main/xgb_model_genes.pkl"
+response_genes = requests.get(url_genes)
+xgb_model_genes = pickle.loads(response_genes.content)
 
-
-#Load saved XGBoost model from fungi
-xgb_model_fungi = pickle.load(open(".\xgb_model_fungi.pkl", 'rb'))
-
+# Load saved XGBoost model from fungi
+url_fungi = "https://raw.githubusercontent.com/fredmutisya/Antimicro.ai/main/xgb_model_fungi.pkl"
+response_fungi = requests.get(url_fungi)
+xgb_model_fungi = pickle.loads(response_fungi.content)
 
 
 
