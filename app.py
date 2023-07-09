@@ -24,14 +24,14 @@ from pycaret.classification import setup, compare_models, pull , save_model
 st.set_page_config(layout="wide")
 
 #Load saved XGBoost model for bacteria with no genes
-xgb_model_no_genes = pickle.load(open("\\xgb_model_no_genes.pkl", 'rb'))
+xgb_model_no_genes = pickle.load(open("xgb_model_no_genes.pkl", 'rb'))
 
 #Load saved XGBoost model for bacteria with genes
-xgb_model_genes = pickle.load(open("\\xgb_model_genes.pkl", 'rb'))
+xgb_model_genes = pickle.load(open("xgb_model_genes.pkl", 'rb'))
 
 
 #Load saved XGBoost model from fungi
-xgb_model_fungi = pickle.load(open("\\xgb_model_fungi.pkl", 'rb'))
+xgb_model_fungi = pickle.load(open("xgb_model_fungi.pkl", 'rb'))
 
 
 # Option menu in the top bar
