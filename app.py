@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 import joblib
+import pickle
 from streamlit_option_menu import option_menu
 from streamlit_extras.switch_page_button import switch_page
 
@@ -80,7 +81,8 @@ if testing == "Home":
     st.markdown('<h1 class="title">Welcome to Antimicro.ai</h1>', unsafe_allow_html=True)
     with st.sidebar:
         st.image("logos/antimicroai.png")
-        st.info("Welcome to Antimicro.ai, your ultimate companion in predicting antimicrobial resistance. Our cutting-edge AI-powered platform leverages advanced algorithms and machine learning techniques to provide accurate predictions and insights on antimicrobial resistance. With Antimicro.ai, you can analyze data, identify trends, and anticipate resistance patterns, enabling you to make informed decisions for effective treatment strategies. Whether you're a healthcare professional, researcher, or involved in public health, Antimicro.ai empowers you with the tools to combat antimicrobial resistance and contribute to a healthier future. Explore the power of AI and join us in the fight against antimicrobial resistance today.")
+        st.info("""Welcome to Antimicro.ai, your ultimate companion in predicting antimicrobial resistance.""") 
+        st.info("""Our cutting-edge AI-powered platform leverages advanced algorithms and machine learning techniques to provide accurate predictions and insights on antimicrobial resistance. Using Pfizer data obtained as aprt of the Vivli data challenge, an antibacterial and antifungal AI predictor was developed. With Antimicro.ai, you can analyze your own data, identify trends, and anticipate resistance patterns, enabling you to make informed decisions for effective treatment strategies. Whether you're a healthcare professional, researcher, or involved in public health, Antimicro.ai empowers you with the tools to combat antimicrobial resistance and contribute to a healthier future. Explore the power of AI and join us in the fight against antimicrobial resistance today.""")
         st.info("Developed by Dr. Rachael Kanguha and Dr. Fredrick Mutisya using Pfizer data as part of the Vivli data challenge")
 
 
@@ -515,5 +517,5 @@ Always exercise critical thinking, expert judgment, and professional expertise w
 
 if testing == "About AntiMicro.ai":
     st.title('About us')
-    st.info("AMR.ai was developed by Dr. Rachael Kanguha & Dr. Fredrick Mutisya to help health care professionals harness the power of Artificial Intelligence in combating Antimicrobial Resistance. This project was developed using Pfizer data as part of the Vivli Data challenge.")
+    st.info("AntiMicro.ai was developed by Dr. Rachael Kanguha & Dr. Fredrick Mutisya to help health care professionals harness the power of Artificial Intelligence in combating Antimicrobial Resistance. This project was developed using Pfizer data as part of the Vivli Data challenge.")
 
