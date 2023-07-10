@@ -114,7 +114,8 @@ if testing == "Build your own AI model":
         
     
     if diy == "Types of Machine Learning models":
-        st.title("Machine learning Models")
+        st.title("Train your own Machine learning Model!")
+        st.info("If your data has categorical variables, ensure it is one-hot-encoded before uploading")
         file = st.file_uploader('')
         if file:
             df = pd.read_csv(file, index_col=None)
