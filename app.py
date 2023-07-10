@@ -97,7 +97,7 @@ if os.path.exists("sourcedata.csv"):
 
 # Check if "Build your own AI model" is selected
 if testing == "Build your own AI model":
-    diy = st.sidebar.radio("Do it yourself", [ "Data analysis", "Types of Machine Learning models", "Download"])
+    diy = st.sidebar.radio("Build you own AI model", [ "Data analysis", "Types of Machine Learning models", "Download"])
     if diy == "Data analysis":
         st.title("If you have your own dataset , upload it here")
         file = st.file_uploader('')
