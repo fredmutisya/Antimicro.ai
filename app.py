@@ -97,44 +97,6 @@ if os.path.exists("sourcedata.csv"):
 
 # Check if "Build your own AI model" is selected
 if testing == "Build your own AI model":
-    st.sidebar.title("Instructions")
-    with st.sidebar:
-        st_lottie(lottie_welcome)
-        st.info("""Step 1: Data Analysis
-
-Load the dataset into the AI model and perform exploratory data analysis (EDA) to understand the structure and characteristics of the data. Clean the data by handling missing values, outliers, and any necessary preprocessing steps. Split the dataset into training and testing subsets for model evaluation.
-
-Step 2: Training the AI model
-
-Select the best scoring model from this list
-ada: Ada Boost Classifier
-dt: Decision Tree Classifier
-dummy: Dummy Classifier
-et: Extra Trees Classifier
-gbc: Gradient Boosting Classifier
-lda: Linear Discriminant Analysis
-lightgbm: Light Gradient Boosting Machine
-lr: Logistic Regression
-nb: Naive Bayes
-qda: Quadratic Discriminant Analysis
-rf: Random Forest Classifier
-ridge: Ridge Classifier
-svm: SVM - Linear Kernel
-xgboost: Extreme Gradient Boosting                
-
-Model metrics used for scoring include:
-Accuracy: Represents the proportion of correctly classified instances out of the total instances in the dataset. It provides an overall measure of model performance.
-Precision: Indicates the proportion of true positive predictions out of the total predicted positives. It measures the model's ability to avoid false positives.
-Recall: Denotes the proportion of true positive predictions out of the total actual positives. It quantifies the model's capability to identify all relevant instances.
-F1 Score: Harmonic mean of precision and recall. It balances the trade-off between precision and recall, providing an overall measure of classification performance.
-Specificity: Indicates the proportion of true negative predictions out of the total actual negatives. It measures the model's ability to avoid false negatives.
-ROC AUC (Receiver Operating Characteristic Area Under the Curve): Measures the model's ability to discriminate between positive and negative instances across various classification thresholds. It provides a single performance value across all thresholds.
-Log Loss: Represents the logarithm of the likelihood function, quantifying the accuracy of predicted probabilities. It is commonly used for probabilistic classification tasks.
-Runtime: Indicates the time taken for training and evaluating the model.               
-
-Step 3: Model Download
-You can download the best model as a Pickle file which is a portable version of the trained AI model               
-                """)
     diy = st.sidebar.radio("Do it yourself", [ "Data analysis", "Types of Machine Learning models", "Download"])
     if diy == "Data analysis":
         st.title("If you have your own dataset , upload it here")
@@ -179,6 +141,44 @@ You can download the best model as a Pickle file which is a portable version of 
         with open ("best_model.pkl", 'rb') as f:
             st.download_button("Download the file", f, 'trained_model.pkl')
 
+    st.sidebar.title("Instructions")
+    with st.sidebar:
+        st_lottie(lottie_welcome)
+        st.info("""Step 1: Data Analysis
+
+Load the dataset into the AI model and perform exploratory data analysis (EDA) to understand the structure and characteristics of the data. Clean the data by handling missing values, outliers, and any necessary preprocessing steps. Split the dataset into training and testing subsets for model evaluation.
+
+Step 2: Training the AI model
+
+Select the best scoring model from this list
+ada: Ada Boost Classifier
+dt: Decision Tree Classifier
+dummy: Dummy Classifier
+et: Extra Trees Classifier
+gbc: Gradient Boosting Classifier
+lda: Linear Discriminant Analysis
+lightgbm: Light Gradient Boosting Machine
+lr: Logistic Regression
+nb: Naive Bayes
+qda: Quadratic Discriminant Analysis
+rf: Random Forest Classifier
+ridge: Ridge Classifier
+svm: SVM - Linear Kernel
+xgboost: Extreme Gradient Boosting                
+
+Model metrics used for scoring include:
+Accuracy: Represents the proportion of correctly classified instances out of the total instances in the dataset. It provides an overall measure of model performance.
+Precision: Indicates the proportion of true positive predictions out of the total predicted positives. It measures the model's ability to avoid false positives.
+Recall: Denotes the proportion of true positive predictions out of the total actual positives. It quantifies the model's capability to identify all relevant instances.
+F1 Score: Harmonic mean of precision and recall. It balances the trade-off between precision and recall, providing an overall measure of classification performance.
+Specificity: Indicates the proportion of true negative predictions out of the total actual negatives. It measures the model's ability to avoid false negatives.
+ROC AUC (Receiver Operating Characteristic Area Under the Curve): Measures the model's ability to discriminate between positive and negative instances across various classification thresholds. It provides a single performance value across all thresholds.
+Log Loss: Represents the logarithm of the likelihood function, quantifying the accuracy of predicted probabilities. It is commonly used for probabilistic classification tasks.
+Runtime: Indicates the time taken for training and evaluating the model.               
+
+Step 3: Model Download
+You can download the best model as a Pickle file which is a portable version of the trained AI model               
+                """)
 
 
 
