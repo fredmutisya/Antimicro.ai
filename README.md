@@ -2,7 +2,7 @@
 
 This code was developed by Dr. Fredrick Mutisya and Dr. Rachael Kanguha using Pfizer data as part of the Vivli data challenge.
 
-# README
+# README- Web Application
 
 This README file provides information about the packages and datasets used in the code provided.
 
@@ -61,8 +61,63 @@ The code includes sections for the AI Antibacterial Predictor and the AI Antifun
 
 The code includes a section for users to build their own machine learning model. Users can upload their own datasets, perform exploratory data analysis, and train a machine learning model using the `pycaret.classification` package. The section provides instructions on how to perform data analysis, select machine learning settings, compare models, and download the trained model.
 
-## About AntiMicro.ai
 
-The code includes a section providing information about AntiMicro.ai, its purpose, and the developers behind it.
+# README- Machine learning code
 
-Please note that this is a summary of the code provided, and further details can be found within the code itself.
+```
+# XGBoost Classifier for AMR Prediction
+
+This repository contains code for training an XGBoost classifier to predict antimicrobial resistance (AMR) based on genetic data. The classifier is trained using a dataset of genetic features and corresponding susceptibility labels.
+
+## Requirements
+
+- Python 3.7 or higher
+- pandas
+- xgboost
+- scikit-learn
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone <repository-url>
+```
+
+2. Install the required packages:
+
+```
+pip install pandas xgboost scikit-learn
+```
+
+## Usage
+
+1. Prepare the dataset:
+
+- Place the dataset file (`amr_with_genes_ml.csv`) in the same directory as the code.
+
+2. Run the code:
+
+- Open a terminal or command prompt.
+- Navigate to the directory containing the code.
+- Run the following command:
+
+```
+python code.py
+```
+
+3. Results:
+
+- The code will train an XGBoost classifier on the dataset, perform predictions on a test set, and calculate the accuracy of the model.
+- The accuracy score will be displayed in the console.
+
+4. Example Prediction:
+
+- The code includes an example prediction on a new set of genetic features (`example_data`).
+- The prediction result will be displayed in the console.
+
+## Model Persistence
+
+- The trained XGBoost classifier is saved as a pickle file (`xgb_model_genes.pkl`) for later use.
+- The pickle file can be loaded to make predictions on new data.
+
