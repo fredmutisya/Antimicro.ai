@@ -19,9 +19,12 @@ The following packages are imported in the code:
 
 ## Datasets
 
-The code uses the following datasets:
+The code uses the following datasets: These data sets were wrangled using Tidyr and dpylr in R to make them compatible with machine learning models.
 
-- `amr_without_genes_ml.csv`: This dataset contains the antimicrobial resistance (AMR) data without genotypic information. It is loaded using the `pd.read_csv` function and stored in the `data` variable.
+- `amr_without_genes_ml.csv`
+- `amr_with_genes_ml.csv`
+- `antifungals_ml.csv`
+
 
 ## Streamlit and Additional Packages
 
