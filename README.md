@@ -1,5 +1,7 @@
 # Antimicro.ai
 
+This code was developed by Dr. Fredrick Mutisya and Dr. Rachael Kanguha using Pfizer data as apart of the Vivli data challenge.
+
 # README
 
 This README file provides information about the packages and datasets used in the code provided.
