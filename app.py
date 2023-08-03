@@ -526,9 +526,10 @@ if testing == "About the Atlas/Pfizer dataset":
     st.info("AntiMicro.ai was developed by Dr. Rachael Kanguha & Dr. Fredrick Mutisya to help health care professionals harness the power of Artificial Intelligence in combating Antimicrobial Resistance. This project was developed using Pfizer data as part of the Vivli Data challenge. This dataset had 858,233 records of 301 different bacterial species containing the minimum inhibitory concentration (MIC) values for 44 different antibiotics from 80 countries. ")
     st.subheader("Missing values")
     st.image("logos/Variables_MIC.png")    
-    st.subheader("About the variables in the Original dataset")
-    st.table(Variables)
-
+    st.subheader("Description of the variables in the Original Antibacterial dataset")
+    st.table(Variables1)
+    st.subheader("Description of the variables in the Original Antifungal dataset")
+    st.table(Variables2)
     
 if testing == "Sub-group analysis":
     st.subheader("Geographic trend-Methicillin Resistant Staph Aureus")
