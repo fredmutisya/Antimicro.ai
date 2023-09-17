@@ -4,6 +4,10 @@ This code was developed by Dr. Fredrick Mutisya and Dr. Rachael Kanguha using Pf
 
 ![AntiMicro.ai logo](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/antimicroai.png)
 
+Website Home Page
+
+![Website](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/website.png)
+
 # README- Data Preprocessing
 
 We analysed the datasets using R version 4.3.1. Here we had to wrangle the data into a long format to make it machine learning compatible. The highlights of the analysis can be seen below
@@ -29,7 +33,7 @@ Antibiotic Classes
 ![Antibiotic classes](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/antibiotics.png)
 
 Minimum Inhibitory Concentration Interpretation
-![Antibiotic classes](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/mic.png)
+![MIC](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/mic.png)
 
 # README- Web Application
 
@@ -90,6 +94,49 @@ The code includes sections for the AI Antibacterial Predictor and the AI Antifun
 
 The code includes a section for users to build their own machine learning model. Users can upload their own datasets, perform exploratory data analysis, and train a machine learning model using the `pycaret.classification` package. The section provides instructions on how to perform data analysis, select machine learning settings, compare models, and download the trained model.
 
+### Data Cleaning
+
+Before feeding data into a machine learning model, you must clean it to remove inconsistencies, errors, and missing values. Common data cleaning steps include:
+
+Handling Missing Data: Decide how to handle missing values (e.g., remove rows, impute values).
+Removing Duplicates: Check for and eliminate duplicate records if they exist.
+Data Formatting: Ensure data types are correct (e.g., dates, numerical values).
+Outlier Detection and Handling: Identify and address outliers that may skew your model.
+
+### Data Exploration
+
+Explore your data to gain insights and understand its characteristics. Common exploratory data analysis (EDA) tasks include:
+
+Summary Statistics: Compute basic statistics like mean, median, and standard deviation.
+Data Visualization: Create plots and charts to visualize relationships and patterns.
+Correlation Analysis: Examine correlations between variables.
+
+### Feature Engineering
+
+Feature engineering involves creating new features or transforming existing ones to improve model performance. In the case of antibiotic resistance, you might:
+
+Encode Categorical Variables: Convert categorical data into numerical form using techniques like one-hot encoding.
+Scaling: Scale numerical features if they have different scales.
+Feature Selection: Choose relevant features that contribute to the prediction task.
+
+### Preprocessing
+
+Different machine learning models may require specific data preprocessing steps. For instance:
+
+Normalization: Normalize data for models like k-Nearest Neighbors (KNN).
+Dimensionality Reduction: Apply techniques like Principal Component Analysis (PCA) for high-dimensional data.
+
+If your dataset has class imbalance issues (e.g., more susceptible bacteria than resistant), consider techniques like oversampling, undersampling, or using different evaluation metrics.
+### Iterations on model building
+
+After data preparation, train your machine learning model using the training dataset. Select an appropriate algorithm based on your problem (e.g., classification or regression).
+Evaluate the model's performance using the validation dataset. Common evaluation metrics for classification tasks include accuracy, precision, recall, F1-score, and ROC curves. For regression tasks, metrics like Mean Absolute Error (MAE) and Mean Squared Error (MSE) are used.
+
+Iteratively adjust hyperparameters and make improvements to the model based on the validation results.
+
+### Substituting the Antimicro.ai for your customised model
+
+Download the model and substitute the pickle file in the cwd
 
 # README- Machine learning code
 
