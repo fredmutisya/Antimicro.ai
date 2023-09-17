@@ -11,6 +11,11 @@ We analysed the datasets using R version 4.3.1. Here we had to wrangle the data 
 ![Analysis](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/analysis.png)
 The dataset had the time in years so timeseries methods were not possible. We also removed highly collinear variables. We utilized the CLSI interpretations and not the actual Minimum Inhibitory Concentration values because the values are variable for different antibiotics. In addition, a low MIC doesn't automatically translate to clinical use. Pharmcodynamic and Pharmacokinetic issues may limit its use. For more information visit [CLSI ](https://clsi.org)
 
+Spatio-Temporal trend of Methicillin Resistant Staph Aureus
+![MRSA](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/MRSA.gif)
+
+Spatio-Temporal trend of Meropenem resistance
+![Meropenem](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/Meropenem.gif)
 
 Family and Species of Bacteria
 
