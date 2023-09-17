@@ -1,6 +1,7 @@
 # Antimicro.ai
 
-This code was developed by Dr. Fredrick Mutisya and Dr. Rachael Kanguha using Pfizer data as part of the Vivli data challenge.
+This code was developed by Dr. Fredrick Mutisya and Dr. Rachael Kanguha using Pfizer data as part of the Vivli data challenge. For more information on Vivli and the challenge, visit the link 
+![Vivli AMR](https://amr.vivli.org/)
 
 ![AntiMicro.ai logo](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/antimicroai.png)
 
