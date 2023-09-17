@@ -4,6 +4,13 @@ This code was developed by Dr. Fredrick Mutisya and Dr. Rachael Kanguha using Pf
 
 ![AntiMicro.ai logo](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/antimicroai.png)
 
+# README- Data Preprocessing
+
+We analysed the datasets using R version 4.3.1. Here we had to wrangle the data into a long format to make it machine learning compatible. The highlights of the analysis can be seen below
+
+![Analysis](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/analysis.png)
+The dataset had the time in years so timeseries methods were not possible. We also removed highly collinear variables. We utilized the CLSI interpretations and not the actual Minimum Inhibitory Concentration values because the values are variable for different antibiotics. In addition, a low MIC doesn't automatically translate to clinical use. Pharmcodynamic and Pharmacokinetic issues may limit its use. For more information visit [CLSI ](https://clsi.org)
+
 # README- Web Application
 
 This README file provides information about the packages and datasets used in the code provided.
