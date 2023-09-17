@@ -13,16 +13,18 @@ The dataset had the time in years so timeseries methods were not possible. We al
 
 ![Analysis](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/analysis.png)
 
-### Family and Species of Bacteria
+Family and Species of Bacteria
+
 ![Bacteria](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/bacteria.jpg)
 
-### Family and Species of Fungi
+Family and Species of Fungi
+
 ![Fungi](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/fungi.jpg)
 
-### Antibiotic Classes
+Antibiotic Classes
 ![Antibiotic classes](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/antibiotic.png)
 
-### Minimum Inhibitory Concentration Interpretation
+Minimum Inhibitory Concentration Interpretation
 ![Antibiotic classes](https://github.com/fredmutisya/Antimicro.ai/blob/main/logos/mic.png)
 
 # README- Web Application
