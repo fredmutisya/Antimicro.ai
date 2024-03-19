@@ -1,6 +1,6 @@
 streamlit==1.24.0
 pandas==1.5.3
-numpy==1.23.5
+numpy>=1.23.5
 joblib==1.3.1
 streamlit_option_menu==0.3.6
 streamlit_extras==0.2.7
